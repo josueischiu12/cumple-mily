@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feliz Cumpleaños ❤️</title>
+
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Segoe UI', sans-serif;
+            background: linear-gradient(180deg, #fde2e4, #fff);
+            color: #333;
+            text-align: center;
+        }
+
+        header {
+            padding: 40px 20px;
+        }
+
+        h1 {
+            font-size: 2.2em;
+            color: #b23a48;
+        }
+
+        p {
+            font-size: 1.1em;
+            line-height: 1.6;
+            margin: 20px;
+        }
+
+        .galeria {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 15px;
+            padding: 20px;
+        }
+
+        .galeria img {
+            width: 100%;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .mensaje {
+            background: #fff;
+            margin: 30px 20px;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+            display: none;
+        }
+
+        button {
+            background: #b23a48;
+            color: #fff;
+            border: none;
+            padding: 15px 25px;
+            border-radius: 30px;
+            font-size: 1em;
+            cursor: pointer;
+            margin: 20px;
+        }
+
+        footer {
+            margin: 40px 0 20px;
+            font-size: 0.9em;
+            color: #777;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>Feliz Cumpleaños, amor ❤️</h1>
+        <p>
+            Hoy celebro el día en que nació la persona que cambió mi vida.  
+            Gracias por existir, por tu sonrisa y por ser tú.
+        </p>
+    </header>
+
+    <section class="galeria">
+        <img src="foto1.jpg" alt="Nuestro recuerdo 1">
+        <img src="foto2.jpg" alt="Nuestro recuerdo 2">
+        <img src="foto3.jpg" alt="Nuestro recuerdo 3">
+    </section>
+
+    <button onclick="mostrarMensaje()">💌 Presiona aquí</button>
+
+    <div class="mensaje" id="mensaje">
+        <p>
+            No eres parte de mi vida…  
+            <strong>eres mi vida.</strong><br><br>
+            Te amo más de lo que cualquier sistema podría calcular.  
+            Feliz cumpleaños, mi mejor decisión. 💖
+        </p>
+    </div>
+
+    <footer>
+        Hecho con amor, solo para ti.
+    </footer>
+
+    <script>
+        function mostrarMensaje() {
+            document.getElementById("mensaje").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
